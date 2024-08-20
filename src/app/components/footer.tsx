@@ -1,6 +1,6 @@
 
 
-function Footer () {
+function Footer():JSX.Element {
   return (
     <div className=" bg-mintBlack">
         <div className="container mx-auto p-4">

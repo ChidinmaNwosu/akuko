@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import "./header.css";
 
-function Header() {
+function Header():JSX.Element {
  
      return (
     <div className=" fixed top-0 z-10 w-screen bg-white  border-b-2 border-mintGray px-2 md:px-0">

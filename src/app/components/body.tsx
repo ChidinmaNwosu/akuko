@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-function Body() {
+function Body():JSX.Element {
   return (
     <div className="border-b-2 border-b-white">
         <div className="container mx-auto mt-20 ">
