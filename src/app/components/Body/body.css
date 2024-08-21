@@ -1,0 +1,14 @@
+ .background-img{
+    background-image:url("/images/scribble3.jpg");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 100%;
+} 
+
+ /* .background-image{
+    background-image:linear-gradient(rgba(214, 219, 220, 0.441), rgba(255, 255, 255, 0.441)), url("/images/scribble2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}  */

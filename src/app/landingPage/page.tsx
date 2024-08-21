@@ -1,18 +1,18 @@
 import React from "react";
-import Header from "@/app/components/header";
-import Body from "@/app/components/body";
-import Footer from "@/app/components/footer";
+import Header from "@/app/components/Header/header";
+import Body from "@/app/components/Body/body";
+import Footer from "@/app/components/Footer/footer";
 
-function LandingPage():React.JSX.Element {
+function LandingPage(): React.JSX.Element {
   return (
     <>
-  <div className="min-h-screen">
-        <Header/>
-        <Body/>
-        <Footer/>
-    </div>
+      <Header />
+      <div className="min-h-full">
+        <Body />
+      </div>
+      <Footer />
     </>
-  )
+  );
 }
 
 export default LandingPage;

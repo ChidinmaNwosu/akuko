@@ -1,9 +1,9 @@
 import React from 'react';
-import LandingPage from './landingPage/page';
+import LandingPage from './LandingPage/page';
 
 function Home():React.JSX.Element {
   return (
-   <div>
+   <div className="min-h-screen">
       <LandingPage/>
    </div>
   )

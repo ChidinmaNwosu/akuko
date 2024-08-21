@@ -2,11 +2,13 @@
 import React from "react";
 import Image from "next/image";
 import "./header.css";
+import { useRouter } from "next/navigation";
 
 function Header():JSX.Element {
- 
+ const router = useRouter();
+
      return (
-    <div className=" fixed top-0 z-10 w-screen bg-white  border-b-2 border-mintGray px-2 md:px-0">
+    <div className=" fixed top-0 z-10 w-screen bg-white  border-b-2 border-gray-300 px-2 md:px-0">
       <div className="container mx-auto p-4">
         <div className="flex justify-between items-center">
           <div className="flex">
@@ -19,7 +21,7 @@ function Header():JSX.Element {
               className=" rounded-full ml-[-20px]"
             />
             {/*header name */}
-            <h1 className=" text-shadow flex items-center justify-center text-center font-bold text-3xl md:text-4xl text-amber-700">
+            <h1 className=" text-shadow flex items-center justify-center text-center font-bold text-3xl md:text-4xl text-amber-600">
               Àkúkó
             </h1>
 
@@ -51,12 +53,12 @@ function Header():JSX.Element {
               Write
             </a>
             <a
-              href="/signIn"
-              className="border-b-2 border-transparent hover:border-mintGreen cursor-pointer transition-all duration-300 ease-in-out"
+              href="/sign-in"
+              className="border-b-2 border-transparent hover:border-mintGreen cursor-pointer transition-all duration-300 ease-in-out" onClick={() => router.push("/sign-in")}
             >
               Sign in
             </a>
-            <button className="p-2 xl:p-3 bg-amber-600 text-mintWite rounded-full hidden lg:block text-base">
+            <button onClick={()=>router.push("/sign-up")} className="p-2 xl:p-3 bg-amber-600 text-mintWite rounded-full hidden lg:block text-base">
               Get started
             </button>
           </div>
